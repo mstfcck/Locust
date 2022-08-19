@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: locust-master
-          image: locust:latest
+          image: locust:v1
           env:
             - name: LOCUST_MODE
               value: master
             - name: TARGET_HOST
-              value: http://localhost:34123
+              value: ""
           ports:
             - name: loc-master-web
               containerPort: 8089

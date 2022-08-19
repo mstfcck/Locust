@@ -25,7 +25,7 @@ run.sh: A shell script that works as an entrypoint for Docker to support master 
 
 > cd docker
 
-> docker build -t locust:latest .
+> docker build -t locust:v1 .
 
 ##  Locust: Deploying in Distributed Mode
 
