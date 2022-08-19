@@ -1,3 +1,4 @@
+# Locust Namespace
 kind: Namespace
 apiVersion: v1
 metadata:
@@ -5,6 +6,7 @@ metadata:
   labels:
     name: locust
 ---
+# Locust Master Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -41,6 +43,7 @@ spec:
               containerPort: 5558
               protocol: TCP
 ---
+# Locust Master Service
 kind: Service
 apiVersion: v1
 metadata:
@@ -78,6 +81,7 @@ spec:
     app: locust-master
   type: NodePort
 ---
+# Locust Worker Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
